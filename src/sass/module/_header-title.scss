@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.header-title {
+  width: rem(300);
+  max-width: 100%;
+  padding-top: rem(22.28);
+  padding-right: rem(14);
+  padding-bottom: rem(17.94);
+  padding-left: rem(10.76);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title__link {
+
+}
+
+.header-title__logo-main {
+  width: 100%;
+  max-width: 100%;
+}
+.header-title__logo-sub {
+  width: 47.353%;
+  max-width: 100%;
+  margin: rem(11.25) auto 0 auto;
+}
+

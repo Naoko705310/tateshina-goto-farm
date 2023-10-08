@@ -1,0 +1,34 @@
+@use "global" as *;
+// ヘッダー
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  background-color: #FDF9EF;
+  padding: rem(47) rem(38) rem(120);
+  position: relative;
+}
+
+.header__inner {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.header__logo {
+  margin: 0 auto;
+  position: absolute;
+  top: -28.838%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header-logo {
+
+}
+
+.header-logo__link {
+
+}
+
