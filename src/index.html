@@ -33,19 +33,94 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo header-logo">
+        <a href="#" class="header-logo__link">
+          <img src=".assets/images/common/logo-01.svg" alt="ヘッダーロゴ">
+        </a>
+        <!-- /.header-logo__link -->
+      </h1>
+      <!-- /.header__logo header-logo -->
+    </div>
+    <!-- /.header__inner -->
   </header>
+  <!-- /.header -->
+
 
   <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+    <!-- FV セクション-->
+    <section id="fv" class="fv">
+      <div class="fv__inner">
+        <!-- FV画像 -->
+        <picture class="fv__image">
+          <source srcset="./assets/images/common/fv-pc.jpg" media="(min-width: 768px)">
+          <img src="./assets/images/common/fv-sp.jpg" alt="牛の画像">
+        </picture>
+        <!-- /.fv__image -->
+        <div class="fv__main-copy-wrapper">
+          <p class="fv__main-copy fv__main-copy--01">
+            あなたは知ってる？
+          </p>
+          <!-- /.fv__main-copy--01 -->
+          <p class="fv__main-copy fv__main-copy--02">
+            蓼科を丸ごと味わう
+          </p>
+          <!-- /.fv__main-copy--01 -->
+          <p class="fv__main-copy fv__main-copy--03">
+            喜びを
+          </p>
+          <!-- /.fv__main-copy--01 -->
+        </div>
+        <!-- /.fv__main-copy-wrapper -->
+      </div>
+      <!-- /.fv__inner -->
+    </section>
+    <!-- /.fv -->
+
+
+
+
+    <!-- セクションタイトル -->
+    <div class="section-title">
+      <h2 class="section-title__text">
+        製品一覧
+      </h2>
+      <!-- /.section-title__text -->
     </div>
+    <!-- /.section-title -->
+
+    <!-- 製品一覧カード -->
+    <a href="#" class="products-card">
+      <figure class="products-card__image">
+        <img src="./assets/images/common/products-grapes.jpg" alt="マスカットの画像">
+      </figure>
+      <!-- /.products-card__image -->
+      <div class="products-card__body">
+        <h3 class="products-card__heading">
+          蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+        </h3>
+        <!-- /.products-card__heading -->
+        <p class="products-card__price">
+          ￥ 7,700（税込）
+        </p>
+        <!-- /.products-card__price -->
+      </div>
+      <!-- /.products-card__body -->
+    </a>
+    <!-- /.products-card -->
+
+      
+
   </main>
 
-  <footer>
-
+  <footer class="footer">
+    <div class="footer__inner">
+      ここにフッターを書く
+    </div>
+    <!-- /.footer__inner -->
   </footer>
+  <!-- /.footer -->
 </body>
 
 </html>

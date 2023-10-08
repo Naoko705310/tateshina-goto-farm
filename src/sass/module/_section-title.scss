@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.section-title {
+
+}
+
+.section-title__text {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $font-color;
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
