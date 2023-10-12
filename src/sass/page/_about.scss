@@ -1,0 +1,115 @@
+@use "global" as *;
+// 蓼科ごとう農園について
+
+.about {
+  width: 100%;
+  max-width: 100%;
+  padding-top: rem(45);
+  background-color: #FDF9EF;
+
+}
+
+.about__inner {
+
+}
+
+.inner {
+
+}
+
+.about__contents-wrapper {
+  max-width: rem(600);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+.about__image-wrapper {
+width: 100%;
+@include mq(md) {
+  width: 84.154%;
+  margin-left: auto;
+}
+
+}
+
+.about__image-left {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 786/524;
+}
+
+.about__image-left img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__image-right {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 393/250;
+  margin-top: rem(38);
+  @include mq(md) {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+.about__image-right img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__body {
+  margin-top: rem(56);
+  @include mq(md) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.about__main-copy {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: #35A1C3;
+  font-weight: $bold;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.90);
+  padding: rem(9) rem(10);
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.about__text-wrapper {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(52);
+  }
+}
+
+.about__text {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #857868;
+  font-weight: $bold;
+  line-height: 1.5;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.90);
+  padding: rem(15);
+  @include mq(md) {
+    line-height: calc(40/16);
+  }
+}
+
