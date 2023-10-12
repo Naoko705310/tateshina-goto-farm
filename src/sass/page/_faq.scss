@@ -1,0 +1,26 @@
+@use "global" as *;
+// FAQ
+
+.faq {
+  margin-top: rem(40);
+  padding: rem(40) 0;
+  background-color: #FDF9EF;
+  @include mq(md) {
+    margin-top: rem(91);
+    padding: rem(91) 0;
+  }
+}
+
+.faq__section-title .section-title__text {
+  text-transform: uppercase;
+}
+
+.faq__list {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(73);
+  }
+}
+
+
+
