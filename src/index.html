@@ -28,6 +28,10 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <!-- <script defer src="./assets/js/jquery.inview.min.js"></script> -->
   <script  defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -138,39 +142,158 @@
     </section>
     <!-- /.about -->
 
+    <!-- 製品一覧 -->
+    <section class="products">
+      <div class="products__inner inner">
+        <!-- セクションタイトル -->
+        <div class="products__section-title section-title">
+          <h2 class="section-title__text">
+            製品一覧
+          </h2>
+          <!-- /.section-title__text -->
+        </div>
+        <!-- /.section-title -->
+        <!-- スワイパー -->
+        <div class="products__swiper">
+          <div class="swiper js-products-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#" class="products-card">
+                  <figure class="products-card__image">
+                    <img src="./assets/images/common/products-grapes.jpg" alt="マスカットの画像">
+                  </figure>
+                  <!-- /.products-card__image -->
+                  <div class="products-card__body">
+                    <h3 class="products-card__heading">
+                      蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+                    </h3>
+                    <!-- /.products-card__heading -->
+                    <p class="products-card__price">
+                      ￥ 7,700（税込）
+                    </p>
+                    <!-- /.products-card__price -->
+                  </div>
+                  <!-- /.products-card__body -->
+                </a>
+                <!-- /.products-card -->
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="products-card">
+                  <figure class="products-card__image">
+                    <img src="./assets/images/common/products-brussels-sprouts.jpg" alt="芽キャベツの画像">
+                  </figure>
+                  <!-- /.products-card__image -->
+                  <div class="products-card__body">
+                    <h3 class="products-card__heading">
+                      標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!! 1kg
+                    </h3>
+                    <!-- /.products-card__heading -->
+                    <p class="products-card__price">
+                      ￥ 4,200（税込）
+                    </p>
+                    <!-- /.products-card__price -->
+                  </div>
+                  <!-- /.products-card__body -->
+                </a>
+                <!-- /.products-card -->
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="products-card">
+                  <figure class="products-card__image">
+                    <img src="./assets/images/common/products-strawberries.jpg" alt="いちごの画像">
+                  </figure>
+                  <!-- /.products-card__image -->
+                  <div class="products-card__body">
+                    <h3 class="products-card__heading">
+                      「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
+                    </h3>
+                    <!-- /.products-card__heading -->
+                    <p class="products-card__price">
+                      ￥ 4,800（税込）
+                    </p>
+                    <!-- /.products-card__price -->
+                  </div>
+                  <!-- /.products-card__body -->
+                </a>
+                <!-- /.products-card -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.products__swiper -->
+      </div>
+      <!-- /.products__inner inner -->
+    </section>
+    <!-- /.products -->
+
+    <!-- お知らせ -->
+    <section class="news">
+      <div class="news__inner inner">
+        <!-- セクションタイトル -->
+        <div class="news__section-title section-title">
+          <h2 class="section-title__text">
+            お知らせ
+          </h2>
+          <!-- /.section-title__text -->
+        </div>
+        <!-- /.section-title -->
+        <!-- お知らせリスト -->
+        <div class="news__list news-list">
+          <dl class="news-list__item">
+            <dt class="news-list__date">
+              2023/06/12
+            </dt>
+            <!-- /.news-list__date -->
+            <dd class="news-list__heading">
+              闇落ちイチゴの販売を開始します。
+            </dd>
+            <!-- /.news-list__heading -->
+          </dl>
+          <!-- /.news-list__item -->
+          <dl class="news-list__item">
+            <dt class="news-list__date">
+              2023/05/14
+            </dt>
+            <!-- /.news-list__date -->
+            <dd class="news-list__heading">
+              NHK「うまいッ！（全国放送）」 に蓼科ごとう農園が登場。
+            </dd>
+            <!-- /.news-list__heading -->
+          </dl>
+          <!-- /.news-list__item -->
+          <dl class="news-list__item">
+            <dt class="news-list__date">
+              2023/04/14
+            </dt>
+            <!-- /.news-list__date -->
+            <dd class="news-list__heading">
+              白樺湖直売所で、新鮮な春野菜と果物を販売しています
+            </dd>
+            <!-- /.news-list__heading -->
+          </dl>
+          <!-- /.news-list__item -->
+        </div>
+        <!-- /.news__list -->
+
+
+
+
+
+
+      </div>
+      <!-- /.news__inner inner -->
+    </section>
+    <!-- /.news -->
+
 
 
 
     <!-- パーツは以下に記述 -->
 
-    <!-- セクションタイトル -->
-    <div class="section-title">
-      <h2 class="section-title__text">
-        製品一覧
-      </h2>
-      <!-- /.section-title__text -->
-    </div>
-    <!-- /.section-title -->
 
-    <!-- 製品一覧カード -->
-    <a href="#" class="products-card">
-      <figure class="products-card__image">
-        <img src="./assets/images/common/products-grapes.jpg" alt="マスカットの画像">
-      </figure>
-      <!-- /.products-card__image -->
-      <div class="products-card__body">
-        <h3 class="products-card__heading">
-          蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
-        </h3>
-        <!-- /.products-card__heading -->
-        <p class="products-card__price">
-          ￥ 7,700（税込）
-        </p>
-        <!-- /.products-card__price -->
-      </div>
-      <!-- /.products-card__body -->
-    </a>
-    <!-- /.products-card -->
+
+
 
       
 

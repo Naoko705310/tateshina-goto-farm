@@ -1,0 +1,34 @@
+@use "global" as *;
+// 製品一覧
+
+.products {
+  background-color: #FDF9EF;
+  padding-top: rem(126);
+  padding-bottom: rem(94);
+}
+
+.products__section-titile {
+
+}
+.products__swiper {
+  height: inherit;
+  margin-top: rem(91);
+  @include mq(md) {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+  max-width: 100%;
+  height: inherit;
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 100%;
+  max-width: rem(264);
+  height: inherit;
+  flex-grow: 1;
+}
