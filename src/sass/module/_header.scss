@@ -5,14 +5,23 @@
   width: 100%;
   max-width: 100%;
   background-color: #FDF9EF;
-  padding: rem(47) rem(38) rem(120);
+  padding-top: rem(47);
+  padding-bottom: rem(45);
   position: relative;
+  @include mq(md) {
+    padding-top: rem(53);
+  }
 }
 
 .header__inner {
   width: 100%;
   max-width: 100%;
   height: 100%;
+  padding: 0 rem(38);
+  @include mq(md) {
+    padding: 0 rem(25);
+  }
+
 }
 
 .header__logo {
@@ -23,12 +32,3 @@
   transform: translateX(-50%);
   z-index: 1;
 }
-
-.header-logo {
-
-}
-
-.header-logo__link {
-
-}
-

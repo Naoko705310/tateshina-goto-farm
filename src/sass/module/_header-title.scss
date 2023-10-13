@@ -9,6 +9,8 @@
   padding-left: rem(10.76);
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .header-title__link {
