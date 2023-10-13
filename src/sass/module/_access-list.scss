@@ -23,12 +23,14 @@
 .access-list__item:first-child {
   border-top: 1px solid #C6C6C6;
 }
+
 .access-list__heading {
   font-family: $base-font-family;
-  font-size: rem(16);
+  font-size: clamp(14px, calc(14px + (18 - 14) * ((100vw - 375px) / (934 - 375))), 18px);
   color: #4E301B;
   font-weight: $bold;
-  width: 37.908%;
+  // width: 37.908%;
+  width: min(37.908%, rem(72));
   @include mq(md) {
     font-size: rem(18);
   }
@@ -36,11 +38,14 @@
 
 .access-list__text {
   font-family: $base-font-family;
-  font-size: rem(16);
+  // font-size: rem(16);
+  font-size: clamp(14px, calc(14px + (18 - 14) * ((100vw - 375px) / (934 - 375))), 18px);
   color: #4E301B;
   font-weight: $bold;
-  width: 62.091%;
+  // width: 62.091%;
+  margin-left: rem(16);
   @include mq(md) {
-    font-size: rem(18);
+    // font-size: rem(18);
+
   }
 }

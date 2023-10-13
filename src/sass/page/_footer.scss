@@ -1,0 +1,76 @@
+@use "global" as *;
+// フッター
+
+.footer {
+  background: #fff;
+  margin-top: rem(24);
+}
+
+.footer-logo {
+  width: rem(96);
+  max-width: 100%;
+  aspect-ratio: 96/96;
+  margin: 0 auto;
+}
+
+.footer-logo__link {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo__link img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-title {
+  width: rem(300);
+  max-width: 100%;
+  padding-top: rem(22.28);
+  padding-right: rem(14);
+  padding-bottom: rem(17.94);
+  padding-left: rem(10.76);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title__logo-main {
+  width: 100%;
+  max-width: 100%;
+}
+.footer-title__logo-sub {
+  width: 47.353%;
+  max-width: 100%;
+  margin: rem(11.25) auto 0 auto;
+}
+
+.footer__nav {
+  margin-top: rem(33);
+}
+
+.footer__copyright {
+  display: block;
+  background: #D9D9D9;
+  font-family: $base-font-family;
+  font-size: rem(12);  
+  color: #4E301B;
+  font-weight: $normal;
+  padding: rem(22) 0;
+  text-align: center;
+  margin-top: rem(40);
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  @include mq(md) {
+    margin-top: rem(97);
+  }
+}
+
+
+

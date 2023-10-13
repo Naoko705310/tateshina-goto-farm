@@ -1,0 +1,36 @@
+@use "global" as *;
+// フッターナビ
+
+.footer-nav {
+
+}
+
+.footer-nav__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: center;
+    gap: rem(24);
+
+  }
+}
+
+.footer-nav__item {
+  padding: rem(8) 0;
+  @include mq(md) {
+    padding: rem(12) 0;
+  }
+
+}
+
+.footer-nav__link {
+  font-family: $base-font-family;
+  font-size: rem(14);  
+  color: #4E301B;
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
