@@ -1,0 +1,327 @@
+@use "global" as *;
+// お問い合わせフォーム
+
+.contact-form {
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: rem(20);
+  padding-top: rem(20);
+  padding-bottom: rem(43);
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: rem(40);
+  @include mq(md) {
+    max-width: rem(740);
+    padding: rem(37) rem(76) rem(43);
+    margin-top: rem(93);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.contact-form__title {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #4E301B;
+  font-weight: $bold;
+  text-align: center;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.contact-form__item {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(24);
+  @include mq(md) {
+    max-width: rem(740);
+    flex-direction: row;
+    gap: rem(58);
+  }
+}
+
+//見出しと「必須」タグ
+.contact-form__item dt {
+  @include mq(md) {
+    width: 40%;
+    // width: 33.333%;
+  }
+}
+
+//入力エリアと入力例
+.contact-form__item dd {
+  @include mq(md) {
+    width: 65%;
+    // width: 56.802%;
+  }
+}
+
+// 入力エリア
+.input-area {
+  width: 100%;
+  max-width: min(100%, rem(500));
+  background: #EFEAE6;
+  border-radius: rem(5);
+  margin-top: rem(8);
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: gray;
+  font-weight: $normal;
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: 0;
+  }
+}
+
+input[type="text"] {
+  // //マウスを使わないユーザー用に、outline:none;の場合はborderをつける
+  // border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+//見出し
+.contact-form__heading {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #4E301B;
+  font-weight: $bold;
+}
+
+//「必須」タグ
+.contact-form__heading span {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: #4E301B;
+  font-weight: $bold;
+  display: inline-block;
+  background-color: #FED966;
+  border-radius: rem(10);
+  padding: rem(5) rem(11);
+  margin-left: rem(18);
+}
+
+//***** ラジオボタンのデザイン *****
+//inputタグのデフォルトデザインを消す
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+//ラジオボタンのラベル
+.radio-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;//ラジオボタン用にスペースを作る
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+//ラジオボタン外側の丸
+.radio-label-span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #4E301B;
+  border-radius: 50%; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//ラジオボタンをチェックした後の丸
+.radio-input:checked + .radio-label-span::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #4E301B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;  
+  transform: translateY(-50%);
+}
+
+//キーボードのみで操作時用のライン
+.radio-input:focus + .radio-label-span::before {
+  outline: 2px solid #3498db; //フォーカスが当たった時の線の色
+}
+
+.radio__text {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: #4E301B;
+  font-weight: $normal;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+//***** ラジオボタンのデザイン ***** ここまで
+
+//入力例のテキスト
+.contact-form__example-text {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  color: gray;
+  font-weight: $normal;
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+.error_required {
+
+}
+
+.contact-form__name-error {
+
+}
+
+.contact-form__postal-code-error {
+
+}
+
+.contact-form__address-error {
+
+}
+
+.contact-form__email-error {
+
+}
+
+.contact-form__tel-error {
+
+}
+
+.contact-form__privacy {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+//***** チェックボックスのデザイン *****
+//デフォルトのデザインを消す
+.check-test {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+//チェックボックスの枠
+.check-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px; //ラベルの左側にスペースを作る
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+//チェックマークのデザイン
+.check-label-span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4E301B;
+  border-radius: 4px; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//チェックした時の枠色
+.check-test:checked + .check-label-span::before {
+  border-color: #3498db; 
+}
+
+//チェックマークのデザイン
+.check-test:checked + .check-label-span::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #4E301B;
+  border-width: 0 2px 2px 0;
+  position: absolute;
+  top: 50%;
+  left: 8px; 
+  transform: translateY(-50%) rotate(45deg);
+}
+
+//フォーカスが当たった時
+.check-test:focus + .check-label-span::before {
+  outline: 2px solid #3498db; 
+}
+//***** チェックボックスのデザイン ***** ここまで
+
+
+.checkbox {
+
+}
+
+.contact-form__privacy-text {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #4E301B;
+  font-weight: $bold;
+}
+
+.contact-form__privacy-link {
+
+}
+
+.contact-form__privacy-error {
+
+}
+
+.contact-form__btn-wrapper {
+  margin-top: rem(50);
+  text-align: center;
+}
+
+//「送信する」ボタン
+.input-submit {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: #4E301B;
+  font-weight: $bold;
+  border-radius: rem(10);
+  background-color: #FED966;
+  padding: rem(13) rem(93);
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.input-submit:hover {
+  background-color: #4E301B;
+  color: #fff;
+}
+
+//アクティブの時（実際にクリックなどの操作をしている時）
+.input-submit:active {
+  background-color: #1c598a; /* Darken background color when active */
+}
+
+//フォーカスした時（カーソルが当たっている状態）
+.input-submit:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5); /* Add a soft outline */
+}
+
+
+
+.contact-form__alert {
+
+}
+
