@@ -80,7 +80,7 @@
 
 input[type="text"] {
   // //マウスを使わないユーザー用に、outline:none;の場合はborderをつける
-  // border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 //見出し
@@ -154,7 +154,7 @@ input[type="text"] {
   outline: 2px solid #3498db; //フォーカスが当たった時の線の色
 }
 
-.radio__text {
+.radio__label {
   font-family: $base-font-family;
   font-size: rem(14);
   color: #4E301B;
@@ -165,7 +165,7 @@ input[type="text"] {
 }
 //***** ラジオボタンのデザイン ***** ここまで
 
-//入力例のテキスト
+//「入力例」のテキスト
 .contact-form__example-text {
   font-family: $base-font-family;
   font-size: rem(12);
@@ -174,30 +174,6 @@ input[type="text"] {
   @include mq(md) {
     font-size: rem(14);
   }
-}
-
-.error_required {
-
-}
-
-.contact-form__name-error {
-
-}
-
-.contact-form__postal-code-error {
-
-}
-
-.contact-form__address-error {
-
-}
-
-.contact-form__email-error {
-
-}
-
-.contact-form__tel-error {
-
 }
 
 .contact-form__privacy {
@@ -261,11 +237,6 @@ input[type="text"] {
 }
 //***** チェックボックスのデザイン ***** ここまで
 
-
-.checkbox {
-
-}
-
 .contact-form__privacy-text {
   font-family: $base-font-family;
   font-size: rem(16);
@@ -274,6 +245,11 @@ input[type="text"] {
 }
 
 .contact-form__privacy-link {
+  font-family: "$base-font-family";
+  font-size: rem(16);
+  color: #0000FF; 
+  font-weight: $bold;
+  border-bottom: 1px solid #0000FF;
 
 }
 
@@ -319,9 +295,21 @@ input[type="text"] {
   box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5); /* Add a soft outline */
 }
 
-
-
-.contact-form__alert {
-
+// 送信ボタンをグレーアウトして、押せないようにする
+.input-submit[disabled] {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
 }
 
+
+
+
+//googleフォームと連携より（しょーごさん）
+.end-message {
+  display: none;
+}
+
+.false-message {
+  display: none;
+}

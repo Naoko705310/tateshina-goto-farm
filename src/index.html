@@ -555,8 +555,7 @@
         </div>
         <!-- /.contact__copy -->
         <!-- お問い合わせフォーム -->
-
-        <form action="#" method="post" id="contact-form" class="contact-form" >
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetl5MkQNJqd5taXbkAvVWClb07kfeLC3Zb5xKdyYnQSfNuMw/formResponse" method="post" id="contact-form" class="contact-form" >
           <p class="contact-form__title">
             お問い合わせメールフォーム
           </p>
@@ -573,22 +572,22 @@
               <!-- ラジオボタンのリスト -->
               <ul class="contact-form__radio radio__items">
                 <li class="radio__item">
-                  <label for="about-products" class="radio-label radio__text">
-                    <input id="about-products" class="radio-input radio__btn" type="radio" name="radio-name inquiry_type" value="弊社製品について" required>
+                  <label for="radio-01" class="radio-label">
+                    <input id="radio-01" class="radio-input" type="radio" name="radio-name" required value="弊社製品について">
                     <span class="radio-label-span">弊社製品について</span>
                   </label>
                 </li>
                 <!-- /.radio__item -->
                 <li class="radio__item">
-                  <label for="strawberry-pick-up" class="radio-label radio__text">
-                    <input id="strawberry-pick-up" class="radio-input radio__btn" type="radio" name="radio-name inquiry_type" value="いちご狩りについて" required>
+                  <label for="radio-02" class="radio-label">
+                    <input id="radio-02" class="radio-input" type="radio" name="radio-name" required value="いちご狩りについて">
                     <span class="radio-label-span">いちご狩りについて</span>
                   </label>
                 </li>
                 <!-- /.radio__item -->
                 <li class="radio__item">
-                  <label for="others" class="radio-label radio__text">
-                    <input id="others" class="radio-input radio__btn" type="radio" name="radio-name inquiry_type" value="その他のお問い合わせ" required>
+                  <label for="radio-03" class="radio-label">
+                    <input id="radio-03" class="radio-input" type="radio" name="radio-name" required value="その他のお問い合わせ">
                     <span class="radio-label-span">その他のお問い合わせ</span>
                   </label>
                 </li>
@@ -608,14 +607,10 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <input type="text" id="name" class="input-area" name="name" placeholder="" autocomplete="name">
+              <input type="text" id="name" class="input-area" name="entry.563087799" placeholder="" autocomplete="name" required>
               <p class="contact-form__example-text">
                 例：山田　太郎
               </p><!-- /.contact-form__example-text -->
-              <!-- エラーメッセージ（内容はJSで制御） -->
-              <span class="error_required"></span> 
-              <p class="contact-form__name-error">
-              </p><!-- /.p-contact-form__name-error -->
             </dd>
           </dl>
           <!-- /.contact-form__item -->
@@ -628,14 +623,10 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <input type="text" id="postal-code" class="input-area" name="name" placeholder="">
+              <input type="text" id="postal-code" class="input-area" name="entry.1358083958" placeholder="">
               <p class="contact-form__example-text">
                 例：666-0000
               </p><!-- /.contact-form__example-text -->
-              <!-- エラーメッセージ（内容はJSで制御） -->
-              <span class="error_required"></span> 
-              <p class="contact-form__postal-code-error">
-              </p><!-- /.p-contact-form__name-error -->
             </dd>
           </dl>
           <!-- /.contact-form__item -->
@@ -649,14 +640,10 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <input type="text" id="address" class="input-area" name="name" placeholder="">
+              <input type="text" id="address" class="input-area" name="entry.1187663989" placeholder="" required>
               <p class="contact-form__example-text">
                 例：東京都港区1-1
               </p><!-- /.contact-form__example-text -->
-              <!-- エラーメッセージ（内容はJSで制御） -->
-              <span class="error_required"></span> 
-              <p class="contact-form__address-error">
-              </p><!-- /.p-contact-form__name-error -->
             </dd>
           </dl>
           <!-- /.contact-form__item -->
@@ -670,14 +657,10 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <input type="text" id="Email" class="input-area" name="Email" placeholder="" autocomplete="email">
+              <input type="email" id="Email" class="input-area" name="entry.1754300124" placeholder="" autocomplete="email" required>
               <p class="contact-form__example-text">
                 例：aaa@123abcd.com
               </p><!-- /.contact-form__example-text -->
-              <!-- エラーメッセージ（内容はJSで制御） -->
-              <span class="error_required"></span> 
-              <p class="contact-form__email-error">
-              </p><!-- /.p-contact-form__name-error -->
             </dd>
           </dl>
           <!-- /.contact-form__item -->
@@ -691,14 +674,10 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <input type="text" id="tel" class="input-area" name="tel" placeholder="" autocomplete="tel">
+              <input type="text" id="tel" class="input-area" name="entry.1062761704" placeholder="" autocomplete="tel" required>
               <p class="contact-form__example-text">
                 例：090-123-4567
               </p><!-- /.contact-form__example-text -->
-              <!-- エラーメッセージ（内容はJSで制御） -->
-              <span class="error_required"></span> 
-              <p class="contact-form__tel-error">
-              </p><!-- /.p-contact-form__name-error -->
             </dd>
           </dl>
           <!-- /.contact-form__item -->
@@ -712,7 +691,7 @@
               <!-- /.contact-form__heading -->
             </dt>
             <dd>
-              <textarea id="message" class="input-area" name="message" cols="32" rows="10" placeholder="ここにお問い合わせ内容を書いてください。"></textarea>
+              <textarea id="message" class="input-area" name="entry.1319223634" cols="32" rows="10" placeholder="ここにお問い合わせ内容を書いてください。" required></textarea>
               <span class="error_required"></span> 
             </dd>
           </dl>
@@ -722,21 +701,20 @@
           <div class="contact-form__privacy">
             <!-- チェックボックス -->
             <label for="checkbox" class="check-label contact-form__privacy-text">
-              <input id="checkbox" class="check-test checkbox" type="checkbox" name="check-name privacy">
+              <input id="checkbox" class="check-test checkbox" type="checkbox" name="check-name privacy" required>
               <span class="check-label-span">
                 <a href="#" class="contact-form__privacy-link">個人情報保護方針</a>に同意する</span>
             </label>
-            <!-- チェックボックスに入力がない時のエラーメッセージ -->
-            <!-- テキスト内容はJSで制御 -->
-            <p class="contact-form__privacy-error"></p>
           </div><!-- /.privacy-policy -->
           
           <!-- 送信ボタン -->
           <div class="contact-form__btn-wrapper">
-            <input type="submit" id="js-submit" class="input-submit contact-form__btn-submit button" value="送信する">
+            <input type="submit" id="js-submit" class="input-submit contact-form__btn-submit js-submit-btn" value="送信する" disabled>
           </div>
           <!-- /.contact-form__btn-wrapper -->
         </form><!-- /.contact-form -->
+        <p class="end-message">お問い合わせありがとうございました</p>
+        <p class="false-message">送信失敗です</p>
         <!-- フォームここまで -->
       </div>
       <!-- /.contact__inner inner -->
