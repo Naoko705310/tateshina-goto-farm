@@ -36,6 +36,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });//products__swiper閉じタグ
 
+  // アコーディオン
+  $(function () {
+    $('.js-accordion-Q').on('click', function () {
+    //nextは次の要素を取得する、今回はクリック要素の次の要素にis-showクラスをつけている
+      $(this).next().toggleClass('is-open');
+      //クリックした要素自体にもclass付与
+      $(this).toggleClass('is-active');
+    });
+  });
+
+
+
+
+
   // お問い合わせフォーム(googleフォームへ)
   $(document).ready(function () {
 
