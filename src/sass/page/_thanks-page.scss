@@ -3,7 +3,7 @@
 
 
 .thanks-page {
-  background-color: #FED966;
+  background-color: #FDF9EF;
 }
 
 .thanks-page__inner {
@@ -15,18 +15,53 @@
 
 .thanks-page__heading {
   font-family: $base-font-family;
-  font-size: rem(16);
+  font-size: rem(18);
   color: #4E301B;
   font-weight: $bold;
   @include mq(md) {
     font-size: rem(24);
   }
 }
+.thanks-page__heading-sub {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  color: #4E301B;
+  font-weight: $bold;
+  margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(20);
+    margin-top: rem(80);
+  }
+}
 
+.thanks-page__text-wrapper {
+  max-width: rem(600);
+  background-color: #fff;
+  text-align: center;
+  padding: rem(40) 0;
+  margin-top: rem(80);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(md) {
+    
+    padding: rem(80) 0;
+    margin-top: rem(120);
+  }
+}
 .thanks-page__text {
   font-family: $base-font-family;
   font-size: rem(14);
   color: #4E301B;
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+.thanks-page__text--completed {
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: #4682B4;
   font-weight: $normal;
   margin-top: rem(20);
   @include mq(md) {

@@ -93,17 +93,21 @@
 }
 
 .accordion-content {
+  opacity: 0;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   line-height: 0;
   height: 0;
   overflow: hidden;
-  opacity: 0;
   transition-duration: .3s;
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(31);
   }
+}
+
+.accordion-content:first-child {
+
 }
 
 // 回答が開いている時のスタイル

@@ -1,5 +1,55 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+  // ハンバーガーメニュー
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      closeDrawerMenu(); // メニューを閉じる関数を呼び出す
+    } else {
+      $('.js-drawer-menu').fadeIn();
+      $(this).addClass('is-open');
+      // メニューが開いたときにスクロールを無効にする
+      $('body').css('overflow', 'hidden');
+    }
+  });
+
+  // ナビのリンクがクリックされたときの処理
+  $('.sp-nav__link').on('click', function () {
+    closeDrawerMenu(); // メニューを閉じる関数を呼び出す
+    // ナビのリンクからhref属性を取得し、該当のセクションへスクロール
+    var targetSection = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(targetSection).offset().top
+    }, 500); // スクロールのアニメーション時間を調整
+  });
+
+  // メニューを閉じる関数
+  function closeDrawerMenu() {
+    $('.js-drawer-menu').fadeOut();
+    $('.js-hamburger').removeClass('is-open');
+    // メニューが閉じたときにスクロールを有効にする
+    $('body').css('overflow', 'auto');
+  }
+
+  // メディアクエリを使用してPC幅を検出し、768pxを超えたときにメニューを閉じる
+  $(window).resize(function () {
+    if ($(window).width() > 768) {
+      closeDrawerMenu(); // PC幅を超えたらメニューを閉じる
+    }
+  });
+
+  // ページ読み込み時にもメディアクエリをチェックしてメニューを閉じる
+  $(document).ready(function () {
+    if ($(window).width() > 768) {
+      closeDrawerMenu(); // ページ読み込み時にもPC幅を超えたらメニューを閉じる
+    }
+  });
+
+
+
+
+
+
+
 
   // 製品一覧：スワイパー
   const swiper = new Swiper('.js-products-swiper', {
@@ -37,17 +87,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });//products__swiper閉じタグ
 
   // アコーディオン
-  $(function () {
-    $('.js-accordion-Q').on('click', function () {
-    //nextは次の要素を取得する、今回はクリック要素の次の要素にis-showクラスをつけている
-      $(this).next().toggleClass('is-open');
-      //クリックした要素自体にもclass付与
-      $(this).toggleClass('is-active');
-    });
-  });
+  $(".js-accordion-Q").click(function() {
+    // クリックしたアコーディオン要素の次の要素を取得
+    var $accordionContent = $(this).next(".accordion-content");
 
+    if ($accordionContent.length > 0) {
+      // 他のアコーディオンを閉じる
+      $(".js-accordion-Q").not(this).removeClass("is-active");
+      $(".accordion-content").not($accordionContent).removeClass("is-open");
 
+      // クリックしたアコーディオン要素にクラスを追加
+      $(this).toggleClass("is-active");
 
+      // クリックしたアコーディオンの次の要素にクラスを追加
+      $accordionContent.toggleClass("is-open");
+    }
+  });//アコーディオン閉じる
 
 
   // お問い合わせフォーム(googleフォームへ)

@@ -3,9 +3,26 @@
 
 .access {
   margin-top: rem(40);
+  position: relative;
+  z-index: 1;
   @include mq(md) {
     margin-top: rem(91);
   }
+}
+
+.access::after {
+  content: "";
+  display: inline-block;
+  width: min( 18.359%, rem(235));
+  max-width: 100%;
+  aspect-ratio: 235/157;
+  background-image: url(../images/common/access-Brussels_sprouts-middle.png);
+  background-size: contain;
+  position: absolute;
+  right: calc(50% - min(48vw, 58%));
+  // bottom: rem(-78);
+  bottom: 0;
+  z-index: 1000;
 }
 
 .access__contents-wrapper {

@@ -78,6 +78,78 @@
           <!-- /.header-logo__link -->
         </div>
         <!-- /.header__logo header-logo -->
+        <!-- ハンバーガー -->
+        <button class="header__hamburger hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button><!-- /.header__hamburger hamburger js-hamburger -->
+        <!-- SPナビ -->
+        <div class="sp-nav__nav sp-nav js-drawer-menu">
+          <h1 class="sp-nav__logo sp-nav-logo">
+            <a href="#" class="sp-nav-logo__link">
+              <img src="./assets/images/common/logo-cow.png" alt="牛の画像">
+            </a>
+            <!-- /.sp-nav-logo__link -->
+          </h1>
+          <!-- /.sp-nav__logo sp-nav-logo -->
+          <!-- SPナビタイトル -->
+          <div class="sp-nav__title sp-nav-title">
+            <a href="#" class="sp-nav-title__link">
+              <img class="sp-nav-title__logo-main" src="./assets/images/common/header-title-sp.png" alt="蓼科ごとう農園">
+              <img class="sp-nav-title__logo-sub" src="./assets/images/common/header-title-sp-sub.png" alt="Tateshina Goto Farm">
+            </a>
+            <!-- /.sp-nav-title__link -->
+            <!-- /.sp-nav-title__main-text -->
+          </div>
+          <!-- /.sp-nav-title -->
+          <ul class="sp-nav__items">
+            <li class="sp-nav__item">
+              <a href="#about" class="sp-nav__link">
+                この農園について
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+            <li class="sp-nav__item">
+              <a href="#products" class="sp-nav__link">
+                製品一覧
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+            <li class="sp-nav__item">
+              <a href="#news" class="sp-nav__link">
+                お知らせ
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+            <li class="sp-nav__item">
+              <a href="#faq" class="sp-nav__link">
+                FAQ
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+            <li class="sp-nav__item">
+              <a href="#access" class="sp-nav__link">
+                アクセス
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+            <li class="sp-nav__item">
+              <a href="#contact" class="sp-nav__link">
+                お問い合わせ
+              </a>
+              <!-- /.sp-nav__link -->
+            </li>
+            <!-- /.sp-nav__item -->
+          </ul>
+          <!-- /.sp-nav__items -->
+        </div>
+        <!-- /.sp-nav__nav sp-nav -->
         <!-- PCナビ -->
         <nav class="header__nav pc-nav">
           <ul class="pc-nav__items">
@@ -86,21 +158,21 @@
               <div class="pc-nav__left u-desktop">
                 <ul class="pc-nav-left__items">
                   <li class="pc-nav-left__item">
-                    <a href="#" class="pc-nav-left__link">
+                    <a href="#about" class="pc-nav-left__link">
                       この農園について
                     </a>
                     <!-- /.pc-nav-left__link -->
                   </li>
                   <!-- /.pc-nav-left__item -->
                   <li class="pc-nav-left__item">
-                    <a href="#" class="pc-nav-left__link">
+                    <a href="#products" class="pc-nav-left__link">
                       製品一覧
                     </a>
                     <!-- /.pc-nav-left__link -->
                   </li>
                   <!-- /.pc-nav-left__item -->
                   <li class="pc-nav-left__item">
-                    <a href="#" class="pc-nav-left__link">
+                    <a href="#news" class="pc-nav-left__link">
                       お知らせ
                     </a>
                     <!-- /.pc-nav-left__link -->
@@ -131,21 +203,21 @@
               <div class="pc-nav__right u-desktop">
                 <ul class="pc-nav-right__items">
                   <li class="pc-nav-right__item">
-                    <a href="#" class="pc-nav-right__link">
+                    <a href="#faq" class="pc-nav-right__link">
                       FAQ
                     </a>
                     <!-- /.pc-nav-right__link -->
                   </li>
                   <!-- /.pc-nav-right__item -->
                   <li class="pc-nav-right__item">
-                    <a href="#" class="pc-nav-right__link">
+                    <a href="#access" class="pc-nav-right__link">
                       アクセス
                     </a>
                     <!-- /.pc-nav-right__link -->
                   </li>
                   <!-- /.pc-nav-right__item -->
                   <li class="pc-nav-right__item">
-                    <a href="#" class="pc-nav-right__link">
+                    <a href="#contact" class="pc-nav-right__link">
                       お問い合わせ
                     </a>
                     <!-- /.pc-nav-right__link -->
@@ -216,7 +288,7 @@
     <!-- /.about -->
 
     <!-- 製品一覧 -->
-    <section class="products">
+    <section id="products" class="products">
       <div class="products__inner inner">
         <!-- セクションタイトル -->
         <div class="products__section-title section-title">
@@ -226,82 +298,84 @@
           <!-- /.section-title__text -->
         </div>
         <!-- /.section-title -->
-        <!-- スワイパー -->
-        <div class="products__swiper">
-          <div class="swiper js-products-swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <a href="#" class="products-card">
-                  <figure class="products-card__image">
-                    <img src="./assets/images/common/products-grapes.jpg" alt="マスカットの画像">
-                  </figure>
-                  <!-- /.products-card__image -->
-                  <div class="products-card__body">
-                    <h3 class="products-card__heading">
-                      蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
-                    </h3>
-                    <!-- /.products-card__heading -->
-                    <p class="products-card__price">
-                      ￥ 7,700（税込）
-                    </p>
-                    <!-- /.products-card__price -->
-                  </div>
-                  <!-- /.products-card__body -->
-                </a>
-                <!-- /.products-card -->
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="products-card">
-                  <figure class="products-card__image">
-                    <img src="./assets/images/common/products-brussels-sprouts.jpg" alt="芽キャベツの画像">
-                  </figure>
-                  <!-- /.products-card__image -->
-                  <div class="products-card__body">
-                    <h3 class="products-card__heading">
-                      標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!! 1kg
-                    </h3>
-                    <!-- /.products-card__heading -->
-                    <p class="products-card__price">
-                      ￥ 4,200（税込）
-                    </p>
-                    <!-- /.products-card__price -->
-                  </div>
-                  <!-- /.products-card__body -->
-                </a>
-                <!-- /.products-card -->
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="products-card">
-                  <figure class="products-card__image">
-                    <img src="./assets/images/common/products-strawberries.jpg" alt="いちごの画像">
-                  </figure>
-                  <!-- /.products-card__image -->
-                  <div class="products-card__body">
-                    <h3 class="products-card__heading">
-                      「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
-                    </h3>
-                    <!-- /.products-card__heading -->
-                    <p class="products-card__price">
-                      ￥ 4,800（税込）
-                    </p>
-                    <!-- /.products-card__price -->
-                  </div>
-                  <!-- /.products-card__body -->
-                </a>
-                <!-- /.products-card -->
-              </div>
+
+        <!-- 製品一覧スワイパー -->
+        <!-- Slider main container -->
+        <div class="products__swiper swiper js-products-swiper">
+          <!-- Additional required wrapper -->
+          <div class="products__swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#" class="products-card">
+                <figure class="products-card__image">
+                  <img src="./assets/images/common/products-grapes.jpg" alt="マスカットの画像">
+                </figure>
+                <!-- /.products-card__image -->
+                <div class="products-card__body">
+                  <h3 class="products-card__heading">
+                    蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+                    蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+                    蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+                  </h3>
+                  <!-- /.products-card__heading -->
+                  <p class="products-card__price">
+                    ￥ 7,700（税込）
+                  </p>
+                  <!-- /.products-card__price -->
+                </div>
+                <!-- /.products-card__body -->
+              </a>
+              <!-- /.products-card -->
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="products-card">
+                <figure class="products-card__image">
+                  <img src="./assets/images/common/products-brussels-sprouts.jpg" alt="芽キャベツの画像">
+                </figure>
+                <!-- /.products-card__image -->
+                <div class="products-card__body">
+                  <h3 class="products-card__heading">
+                    標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!! 1kg
+                  </h3>
+                  <!-- /.products-card__heading -->
+                  <p class="products-card__price">
+                    ￥ 4,200（税込）
+                  </p>
+                  <!-- /.products-card__price -->
+                </div>
+                <!-- /.products-card__body -->
+              </a>
+              <!-- /.products-card -->
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="products-card">
+                <figure class="products-card__image">
+                  <img src="./assets/images/common/products-strawberries.jpg" alt="いちごの画像">
+                </figure>
+                <!-- /.products-card__image -->
+                <div class="products-card__body">
+                  <h3 class="products-card__heading">
+                    「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
+                  </h3>
+                  <!-- /.products-card__heading -->
+                  <p class="products-card__price">
+                    ￥ 4,800（税込）
+                  </p>
+                  <!-- /.products-card__price -->
+                </div>
+                <!-- /.products-card__body -->
+              </a>
+              <!-- /.products-card -->
             </div>
           </div>
         </div>
-        <!-- /.products__swiper -->
       </div>
       <!-- /.products__inner inner -->
     </section>
     <!-- /.products -->
 
     <!-- お知らせ -->
-    <section class="news">
+    <section id="news" class="news">
       <div class="news__inner inner">
         <!-- セクションタイトル -->
         <div class="news__section-title section-title">
@@ -354,7 +428,7 @@
     <!-- /.news -->
 
     <!-- FAQ -->
-    <section class="faq">
+    <section id="faq" class="faq">
       <div class="faq__inner inner">
         <!-- セクションタイトル -->
         <div class="faq__section-title section-title">
@@ -379,7 +453,7 @@
                 <!-- /.faq-list__question -->
               </div>
               <!-- /.faq-list__heading -->
-              <p class="faq-list__text accordion-content">
+              <p class="faq-list__text accordion-content is-open">
                 冷蔵便に対応しています。その場合別途150円かかります。
               </p>
               <!-- /.faq-list__text -->
@@ -467,7 +541,7 @@
     <!-- /.faq -->
 
     <!-- アクセス -->
-    <section class="access">
+    <section id="access" class="access">
       <div class="access__inner inner">
         <!-- セクションタイトル -->
         <div class="access__section-title section-title">
@@ -540,7 +614,7 @@
     <!-- /.access -->
 
     <!-- お問い合わせ -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__inner">
         <!-- セクションタイトル -->
         <div class="contact__section-title section-title">

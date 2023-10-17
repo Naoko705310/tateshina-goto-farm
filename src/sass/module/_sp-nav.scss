@@ -1,0 +1,102 @@
+@use "global" as *;
+// SPナビ
+
+.sp-nav {
+  background: rgba(255, 255, 255, 0.90);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: scroll; /* 縦スクロールを可能にする */
+  padding-top: rem(61);
+  padding-right: rem(20);
+  padding-bottom: rem(198);
+  padding-left: rem(20);
+  display: none;
+}
+
+// .sp-nav__logo {
+
+// }
+
+.sp-nav-logo {
+  width: rem(96);
+  max-width: 100%;
+  aspect-ratio: 96/96;
+  margin: 0 auto;
+}
+
+.sp-nav-logo__link {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .sp-nav__title {
+
+// }
+
+.sp-nav-title {
+  width: 100%;
+  max-width: 100%;
+  // padding-top: rem(22.28);
+  // padding-right: rem(14);
+  // padding-bottom: rem(17.94);
+  // padding-left: rem(10.76);
+  margin-top: rem(10);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+// .sp-nav-title__link {
+
+// }
+
+.sp-nav-title__logo-main {
+  width: rem(280);
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.sp-nav-title__logo-sub {
+  width: 47.353%;
+  max-width: 100%;
+  margin: rem(11.25) auto 0 auto;
+}
+
+// .sp-nav__nav {
+//   margin-top: rem(33);
+// }
+
+// .sp-nav {
+
+// }
+
+.sp-nav__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(50);
+}
+
+.sp-nav__item {
+  padding: rem(8) 0;
+}
+
+.sp-nav__link {
+  font-family: $base-font-family;
+  font-size: rem(16);  
+  color: #4E301B;
+  font-weight: $bold;
+}
+
+
