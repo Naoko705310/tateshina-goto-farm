@@ -2,29 +2,13 @@
 // FAQ
 
 .faq {
-  // margin-top: rem(40);
+  margin-top: rem(28); //40-12
   padding: rem(40) 0;
   background-color: #FDF9EF;
-  position: relative;
-  z-index: 1;
   @include mq(md) {
+    margin-top: rem(79);//91-12
     padding: rem(91) 0;
   }
-}
-
-.faq::after {
-  content: "";
-  display: inline-block;
-  width: min( 18.359%, rem(235));
-  max-width: 100%;
-  aspect-ratio: 235/157;
-  background-image: url(../images/common/faq-breakfast-middle.png);
-  background-size: contain;
-  position: absolute;
-  left: calc(50% - min(48vw, 58%));
-  // bottom: rem(-78);
-  bottom: 0;
-  z-index: 1000;
 }
 
 .faq__section-title .section-title__text {
@@ -36,6 +20,31 @@
   @include mq(md) {
     margin-top: rem(73);
   }
+}
+
+.faq__image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(1280);
+  }
+}
+
+// いちごパンケーキの画像
+.faq__image::after {
+  content: "";
+  display: inline-block;
+  width: min( 27.265%, rem(349));
+  max-width: 100%;
+  aspect-ratio: 349/197;
+  background-image: url(../images/common/faq-breakfast-middle.png);
+  background-size: contain;
+  position: absolute;
+  left: calc(50% - min(48vw, 58%));
+  top: rem(-11);//30-20(answerが隠れている分-カンプの位置）
+  z-index: 1000;
 }
 
 

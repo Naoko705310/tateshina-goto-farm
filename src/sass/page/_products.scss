@@ -7,37 +7,18 @@
   padding-bottom: rem(94);
 }
 
-.products__section-titile {
-
-}
-
-
-.products__swiper.swiper {
-  // height: inherit;
-  // margin-top: rem(91);
+.products__swiper-container {
+  margin-top: rem(40);
   @include mq(md) {
-    margin-right: calc(50% - 50vw);
-    margin-left: calc(50% - 50vw);
-    overflow: hidden;
+    margin-top: rem(91);
   }
 }
-
-.products__swiper-wrapper.swiper-wrapper {
-  width: 100%;
-  // max-width: 100%;
-  // height: inherit;
-}
-
-.swiper-slide {
-  height: auto;
-
-
-
+.products__swiper.swiper {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
 }
 
 .swiper-wrapper .swiper-slide {
-  // width: 100%;
-  // max-width: rem(264);
-  // height: inherit;
-  // flex-grow: 1;
+  height: auto; //cardの高さを揃える(デフォルトの100%を打ち消し）
 }

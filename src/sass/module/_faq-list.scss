@@ -6,6 +6,7 @@
   max-width: rem(740);
   margin-right: auto;
   margin-left: auto;
+  position: relative;
   @include mq(md) {
     max-width: 100%;
   }

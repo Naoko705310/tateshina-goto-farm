@@ -3,16 +3,24 @@
 
 .news {
   margin-top: rem(40);
-  padding-bottom: rem(40);
-  position: relative;
-  z-index: 1;
   @include mq(md) {
     margin-top: rem(91);
-    padding-bottom: rem(91);
   }
 }
 
-.news::after {
+.news__image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: rem(12);
+  position: relative;
+  @include mq(md) {
+    max-width: rem(1280);
+  }
+}
+
+// ぶどうの画像
+.news__image::after {
   content: "";
   display: inline-block;
   width: min( 18.359%, rem(235));
@@ -22,8 +30,7 @@
   background-size: contain;
   position: absolute;
   right: calc(50% - min(48vw, 58%));
-  // bottom: rem(-78);
-  bottom: 0;
+  top: rem(12);
   z-index: 1000;
 }
 

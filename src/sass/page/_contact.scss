@@ -3,11 +3,11 @@
 
 .contact {
   background-color: #FDF9EF;
-  margin-top: rem(40);
+  // margin-top: rem(40);
   padding-top: rem(56);
   padding-bottom: rem(20);
   @include mq(md) {
-    margin-top: rem(78);
+    // margin-top: rem(78);
     padding-top: rem(104);
     padding-bottom: rem(30);
   }

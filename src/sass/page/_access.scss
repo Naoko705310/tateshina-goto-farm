@@ -3,26 +3,13 @@
 
 .access {
   margin-top: rem(40);
+  padding-bottom: rem(40);
   position: relative;
   z-index: 1;
   @include mq(md) {
     margin-top: rem(91);
+    padding-bottom: rem(78);
   }
-}
-
-.access::after {
-  content: "";
-  display: inline-block;
-  width: min( 18.359%, rem(235));
-  max-width: 100%;
-  aspect-ratio: 235/157;
-  background-image: url(../images/common/access-Brussels_sprouts-middle.png);
-  background-size: contain;
-  position: absolute;
-  right: calc(50% - min(48vw, 58%));
-  // bottom: rem(-78);
-  bottom: 0;
-  z-index: 1000;
 }
 
 .access__contents-wrapper {
@@ -35,12 +22,6 @@
     flex-direction: row;
   }
 }
-
-.access__list {
-
-}
-
-
 
 .access__map {
   width: 100%;
@@ -68,5 +49,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.access__image {
+  position: relative;
+}
+
+// 芽キャベツの画像
+.access__image::after {
+  content: "";
+  display: inline-block;
+  width: min( 20.625%, rem(264));
+  max-width: 100%;
+  aspect-ratio: 264/150;
+  background-image: url(../images/common/access-Brussels_sprouts-middle.png);
+  background-size: contain;
+  position: absolute;
+  right: calc(50% - min(48vw, 58%));
+  z-index: 1000;
 }
 
