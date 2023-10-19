@@ -44,21 +44,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-
-
-
-
-
-
-
   // 製品一覧：スワイパー
   const swiper = new Swiper('.js-products-swiper', {
     // Optional parameters
     loop: true,
     speed: 4000,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     allowTouchMove: true,
     spaceBetween: 24,
     breakpoints: {

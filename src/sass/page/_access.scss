@@ -52,7 +52,13 @@
 }
 
 .access__image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   position: relative;
+  @include mq(md) {
+    max-width: rem(1280);
+  }
 }
 
 // 芽キャベツの画像

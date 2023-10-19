@@ -6,6 +6,8 @@
   margin-top: rem(24);
 }
 
+
+
 .footer-logo {
   width: rem(96);
   max-width: 100%;
@@ -52,6 +54,48 @@
 
 .footer__nav {
   margin-top: rem(33);
+}
+
+.footer__image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(1280);
+  }
+}
+  // 手の上のいちごの画像
+.footer__image::before {
+  content: "";
+  display: inline-block;
+  width: min( 23.203%, rem(297));
+  max-width: 100%;
+  aspect-ratio: 297/167;
+  background-image: url(../images/common/footer-strawberry-middle.png);
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: rem(60);
+  z-index: 1000;
+  // margin-left: calc(50% - 50vw);
+  // overflow: hidden;
+}
+  // 牛の画像
+.footer__image::after {
+  content: "";
+  display: inline-block;
+  width: min( 18.515%, rem(237));
+  max-width: 100%;
+  aspect-ratio: 237/162;
+  background-image: url(../images/common/footer-livestock-middle.png);
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: rem(60);
+  z-index: 1000;
+  // margin-right: calc(50% - 50vw);
+  // overflow: hidden;
 }
 
 .footer__copyright {
