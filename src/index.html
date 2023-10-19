@@ -26,14 +26,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-  <!-- <script defer src="./assets/js/jquery.inview.min.js"></script> -->
   <script  defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -244,18 +243,17 @@
         <div class="about__contents-wrapper">
           <!-- 背景画像 -->
           <div class="about__image-wrapper">
-            <figure class="about__image-left">
+            <figure class="about__image-left" data-aos="zoom-in" data-aos-duration="3000">
               <img src="./assets/images/common/about-01.jpg" alt="子供がアルパカに餌をあげている画像">
             </figure>
-            <figure class="about__image-right">
+            <figure class="about__image-right" data-aos="zoom-in" data-aos-duration="3000">
               <img src="./assets/images/common/about-02.jpg" alt="馬の親子の画像">
             </figure>
           </div>
           <!-- /.about__image-wrapper -->
           <div class="about__body">
             <h2 class="about__main-copy">
-              蓼科の生きた豊かな恵みを、<br class="u-mobile">
-              そのままに
+              蓼科の生きた豊かな恵みを、そのままに
             </h2>
             <!-- /.about__main-copy -->
             <div class="about__text-wrapper">
@@ -886,5 +884,8 @@
           <!-- /.footer__image -->
   </footer>
   <!-- /.footer -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
