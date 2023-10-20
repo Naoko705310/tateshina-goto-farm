@@ -19,6 +19,7 @@
   gap: rem(8);
   align-items: center;
   position: relative;
+  line-height: 1.5;
 }
 
 // 下矢印
@@ -64,7 +65,7 @@
 
 //質問のQマーク
 .faq-list__q {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: rem(18);
   color: #4E301B;
   font-weight: $bold;
@@ -80,6 +81,7 @@
   font-size: rem(16);
   color: #4E301B;
   font-weight: $bold;
+  line-height: 1.5;
   width: 75.675%;
   @include mq(md) {
     font-size: rem(18);

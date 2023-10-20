@@ -4,8 +4,14 @@
 .about {
   width: 100%;
   max-width: 100%;
-  // padding-top: rem(45);
   background-color: #FDF9EF;
+}
+
+.about__inner {
+  padding: 0 rem(20);
+  @include mq(md) {
+    padding: 0 rem(25);
+  }
 }
 
 .about__contents-wrapper {
@@ -15,19 +21,20 @@
   @include mq(md) {
     width: 100%;
     max-width: 100%;
+    padding-right: rem(23);
+    padding-left: rem(158);
     position: relative;
     z-index: 1;
   }
-
 }
 
 .about__image-wrapper {
 width: 100%;
+height: auto;
 padding-bottom: 20%;
 position: relative;
 @include mq(md) {
-  width: 84.154%;
-  margin-left: auto;
+  // margin-left: auto;
   padding-bottom: 0;
 }
 }
@@ -36,7 +43,13 @@ position: relative;
 .about__image-left {
   width: 100%;
   max-width: 100%;
+  height: auto;
   aspect-ratio: 786/524;
+  @include mq(md) {
+    // width: 63.902%;
+    width: rem(786);
+    margin-left: auto;
+  }
 }
 
 .about__image-left img {
@@ -49,15 +62,18 @@ position: relative;
 
 // 馬の親子画像
 .about__image-right {
-  width: 50%;
+  width: 40vw;
   max-width: 100%;
   aspect-ratio: 393/250;
-  margin-left: auto;
+  // margin-left: auto;
   position: absolute;
+  top: 60%;
   right: 0;
-  bottom: 0;
+  // right: 0;
+  // bottom: 0;
   @include mq(md) {
-    // width: 50%;
+    // width: 31.951%;
+    width: rem(393);
     position: inherit;
     margin-top: rem(38);
     margin-left: auto;
@@ -72,14 +88,20 @@ position: relative;
   border-radius: rem(50);
 }
 
-.about__body {
+.about__body-wrapper {
   margin-top: rem(56);
   @include mq(md) {
+    // width: 73.008%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    // padding-left: rem(158);
+    padding-left: 12.845%;
   }
+}
+.about__body {
+
 }
 
 .about__main-copy {
@@ -92,14 +114,14 @@ position: relative;
   background: rgba(255, 255, 255, 0.90);
   padding: rem(9) rem(10);
   @include mq(md) {
-    // font-size: rem(40);
+    font-size: rem(40);
   }
 }
 
 .about__text-wrapper {
   margin-top: rem(24);
   @include mq(md) {
-    margin-top: rem(52);
+    margin-top: rem(28);
   }
 }
 

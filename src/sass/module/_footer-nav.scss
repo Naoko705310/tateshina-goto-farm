@@ -16,14 +16,6 @@
   }
 }
 
-.footer-nav__item {
-  padding: rem(8) 0;
-  @include mq(md) {
-    padding: rem(12) 0;
-  }
-
-}
-
 .footer-nav__link {
   font-family: $base-font-family;
   font-size: rem(14);  

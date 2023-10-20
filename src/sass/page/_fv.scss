@@ -3,7 +3,7 @@
 .fv {
   width: 100%;
   max-width: 100%;
-  height: 100vh;
+  aspect-ratio: 1280/854;
   position: relative;
   z-index: 0;
 }
@@ -41,22 +41,26 @@
     white-space: nowrap; /* テキストを折り返さないように設定（必要に応じて） */
     top: 13.114%;//112/854
     right: 11.406%;//146/1280
+    gap: rem(21);
   }
 }
 
 .fv__main-copy {
   font-family: $base-font-family;
-  font-size: clamp(24px, 2vw, 32px);
+  font-size: clamp(24px, 24px + 24 * (100vw - 375px) / 905, 32px);
   color: $font-color;
   font-weight: $bold;
-  line-height: 1;
+  
   display: inline-block;
   background-color: #fff;
   padding: rem(7);
   margin-top: rem(6);
   @include mq(md) {
+    line-height: 1;
+  letter-spacing: 0.5em;
+    padding: rem(7) rem(15) 0;
     margin-top: 0;
-    margin-right: rem(21);
+    // margin-right: rem(21);
   }
 }
 
