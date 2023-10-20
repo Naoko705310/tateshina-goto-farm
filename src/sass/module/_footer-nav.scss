@@ -21,7 +21,10 @@
   font-size: rem(14);  
   color: #4E301B;
   font-weight: $bold;
+  display: inline-block;
+  padding: rem(8) 0;
   @include mq(md) {
     font-size: rem(16);
+    padding: 0;
   }
 }

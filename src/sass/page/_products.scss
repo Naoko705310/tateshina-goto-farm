@@ -3,8 +3,11 @@
 
 .products {
   background-color: #FDF9EF;
-  padding-top: rem(126);
+  padding-top: rem(80);
   padding-bottom: rem(94);
+  @include mq(md) {
+    padding-top: rem(126);
+  }
 }
 
 .products__swiper-container {
