@@ -4,32 +4,14 @@
 .news-list {
   width: 100%;
   max-width: rem(600);
-  // margin-top: rem(40);
   margin-right: auto;
   margin-left: auto;
   position: relative;
   @include mq(md) {
     width: 100%;
     max-width: 100%;
-    // margin-top: rem(90);
   }
 }
-
-// // ぶどうの画像
-// .news-list::after {
-//   content: "";
-//   display: inline-block;
-//   width: min( 18.359%, rem(235));
-//   max-width: 100%;
-//   aspect-ratio: 235/157;
-//   background-image: url(../images/common/news-grapes-middle.png);
-//   background-size: contain;
-//   position: absolute;
-//   right: calc(50% - min(48vw, 58%));
-//   bottom: 0;
-//   z-index: 1000;
-// }
-
 
 .news-list__item {
   display: flex;

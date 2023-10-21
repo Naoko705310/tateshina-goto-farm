@@ -29,14 +29,13 @@
 }
 
 .about__image-wrapper {
-width: 100%;
-height: auto;
-padding-bottom: 20%;
-position: relative;
-@include mq(md) {
-  // margin-left: auto;
-  padding-bottom: 0;
-}
+  width: 100%;
+  height: auto;
+  padding-bottom: 20%;
+  position: relative;
+  @include mq(md) {
+    padding-bottom: 0;
+  }
 }
 
 // アルパカに餌をあげる子供の画像
@@ -65,14 +64,10 @@ position: relative;
   width: 40vw;
   max-width: 100%;
   aspect-ratio: 393/250;
-  // margin-left: auto;
   position: absolute;
   top: 60%;
   right: 0;
-  // right: 0;
-  // bottom: 0;
   @include mq(md) {
-    // width: 31.951%;
     width: rem(393);
     position: inherit;
     margin-top: rem(38);
@@ -91,22 +86,16 @@ position: relative;
 .about__body-wrapper {
   margin-top: rem(56);
   @include mq(md) {
-    // width: 73.008%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    // padding-left: rem(158);
     padding-left: 12.845%;
   }
-}
-.about__body {
-
 }
 
 .about__main-copy {
   font-family: $base-font-family;
-  // font-size: rem(24);
   font-size: clamp(18px, 18px + 18 * (100vw - 375px) / 905, 40px);
   color: #35A1C3;
   font-weight: $bold;

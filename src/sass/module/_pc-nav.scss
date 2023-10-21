@@ -1,13 +1,6 @@
 @use "global" as *;
 // PCナビ
 
-.header__nav {
-
-}
-
-.pc-nav {
-
-}
 // 左、タイトル、右を横並び
 .pc-nav__items {
   @include mq(md) {
@@ -16,14 +9,6 @@
     gap: min(2vw, rem(39));
     align-items: center;
   }
-}
-
-.pc-nav__item {
-
-}
-
-.pc-nav__left {
-
 }
 
 .pc-nav-left__items,
@@ -41,11 +26,6 @@
   justify-content: flex-start;
 }
 
-.pc-nav-left__item,
-.pc-nav-right__item {
-  // padding: 0 min(1vw, 20px);
-}
-
 .pc-nav-left__link,
 .pc-nav-right__link {
   font-family: $base-font-family;
@@ -55,41 +35,5 @@
   @include mq(md) {
     font-size: rem(16);
   }
-}
-
-.header__title {
-
-}
-
-.header-title {
-
-}
-
-.header-title__link {
-
-}
-
-.header-title__logo-main {
-
-}
-
-.header-title__logo-sub {
-
-}
-
-.pc-nav__right {
-
-}
-
-.pc-nav-right__items {
-
-}
-
-.pc-nav-right__item {
-
-}
-
-.pc-nav-right__link {
-
 }
 

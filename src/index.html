@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: https://ogp.me/ns#">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
@@ -11,12 +11,15 @@
   <meta name="description" content="蓼科ごとう農園」は、蓼科の新鮮な農産物を提供するだけでなく、蓼科の自然環境を大切に守り、後世に残すことを使命としています" />
   <meta name="keywords" content="蓼科ごとう農園" />
   <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://naoko-test.site/tateshina-goto-farm" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="蓼科ごとう農園トップページ" />
+  <meta property="og:description" content="蓼科ごとう農園」は、蓼科の新鮮な農産物を提供するだけでなく、蓼科の自然環境を大切に守り、後世に残すことを使命としています" />
+  <meta property="og:site_name" content="蓼科ごとう農園" />
+  <meta property="og:image" content="https://naoko-test.site/src/images/common/tateshina-goto-farm-OGP.jpg" />
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Naoko705310" />
   <!-- ファビコン -->
   <link rel="shortcut icon" href="./assets/images/common/favicon.ico"> 
   <!-- フォント -->
@@ -28,8 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- JavaScript -->
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -67,7 +69,6 @@
       <!-- /.fv__inner -->
     </section>
     <!-- /.fv -->
-
     <!-- ヘッダー -->
     <header class="header">
       <div class="header__inner">
@@ -238,7 +239,6 @@
       <!-- /.header__inner -->
     </header>
     <!-- /.header -->
-
     <!-- 蓼科ごとう農園について -->
     <section id="about" class="about">
       <div class="about__inner">
@@ -377,7 +377,6 @@
       <!-- /.products__inner inner -->
     </section>
     <!-- /.products -->
-
     <!-- お知らせ -->
     <section id="news" class="news">
       <div class="news__inner inner">
@@ -435,7 +434,6 @@
       <!-- /.news__image -->
     </section>
     <!-- /.news -->
-
     <!-- FAQ -->
     <section id="faq" class="faq">
       <div class="faq__inner inner">
@@ -553,7 +551,6 @@
       <!-- /.faq__image -->
     </section>
     <!-- /.faq -->
-
     <!-- アクセス -->
     <section id="access" class="access">
       <div class="access__inner inner">
@@ -629,7 +626,6 @@
       <!-- /.access__image -->
     </section>
     <!-- /.access -->
-
     <!-- お問い合わせ -->
     <section id="contact" class="contact">
       <div class="contact__inner">
@@ -645,149 +641,151 @@
           ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。
         </div>
         <!-- /.contact__copy -->
-        <!-- お問い合わせフォーム -->
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetl5MkQNJqd5taXbkAvVWClb07kfeLC3Zb5xKdyYnQSfNuMw/formResponse" method="post" id="contact-form" class="contact-form" >
-          <p class="contact-form__title">
-            お問い合わせメールフォーム
-          </p>
-          <!-- /.contact-form__title -->
-          <dl class="contact-form__item">
-            <dt>
-              <label class="contact-form__heading">
-                お問い合わせ種類
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <!-- ラジオボタンのリスト -->
-              <ul class="contact-form__radio radio__items">
-                <li class="radio__item">
-                  <label for="radio-01" class="radio-label">
-                    <input id="radio-01" class="radio-input" type="radio" name="radio-name" required value="弊社製品について">
-                    <span class="radio-label-span">弊社製品について</span>
-                  </label>
-                </li>
-                <!-- /.radio__item -->
-                <li class="radio__item">
-                  <label for="radio-02" class="radio-label">
-                    <input id="radio-02" class="radio-input" type="radio" name="radio-name" required value="いちご狩りについて">
-                    <span class="radio-label-span">いちご狩りについて</span>
-                  </label>
-                </li>
-                <!-- /.radio__item -->
-                <li class="radio__item">
-                  <label for="radio-03" class="radio-label">
-                    <input id="radio-03" class="radio-input" type="radio" name="radio-name" required value="その他のお問い合わせ">
-                    <span class="radio-label-span">その他のお問い合わせ</span>
-                  </label>
-                </li>
-                <!-- /.radio__item -->
-              </ul>
-              <!-- /.contact-form__radio radio__items -->
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- 名前 -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="name" class="contact-form__heading">
-                お名前
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <input type="text" id="name" class="input-area" name="entry.563087799" placeholder="" autocomplete="name" required>
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- 郵便番号 -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="postal-code" class="contact-form__heading">
-                郵便番号
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <input type="text" id="postal-code" class="input-area input-area__postal-code" name="entry.1358083958" placeholder="">
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- 住所 -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="address" class="contact-form__heading">
-                ご住所
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <input type="text" id="address" class="input-area" name="entry.1187663989" placeholder="" required>
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- メールアドレス -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="Email" class="contact-form__heading">
-                メールアドレス
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <input type="email" id="Email" class="input-area" name="entry.1754300124" placeholder="" autocomplete="email" required>
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- 電話番号 -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="tel" class="contact-form__heading">
-                電話番号
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <input type="text" id="tel" class="input-area" name="entry.1062761704" placeholder="" autocomplete="tel" required>
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- お問い合わせ内容 -->
-          <dl class="contact-form__item">
-            <dt>
-              <label for="message" class="contact-form__heading">
-                お問い合わせ内容
-                <span>必須</span>
-              </label>
-              <!-- /.contact-form__heading -->
-            </dt>
-            <dd>
-              <textarea id="message" class="text-area" name="entry.1319223634" cols="32" rows="7" placeholder="ここにお問い合わせ内容を書いてください。" required></textarea>
-              <span class="error_required"></span> 
-            </dd>
-          </dl>
-          <!-- /.contact-form__item -->
-          <!-- 送信ボタン -->
-          <div class="contact-form__btn-wrapper">
-            <input type="submit" id="js-submit" class="input-submit contact-form__btn-submit js-submit-btn" value="送信する" disabled>
-          </div>
-          <p id="error-message" class="error-message">*必須項目に入力がありません。</p>
-          <!-- /.contact-form__btn-wrapper -->
-        </form><!-- /.contact-form -->
-        <p class="end-message">お問い合わせありがとうございました</p>
-        <p class="false-message">送信失敗です</p>
-        <!-- フォームここまで -->
+        <div class="contact__form-wrapper">
+          <!-- お問い合わせフォーム -->
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetl5MkQNJqd5taXbkAvVWClb07kfeLC3Zb5xKdyYnQSfNuMw/formResponse" method="post" id="contact-form" class="contact-form" >
+            <p class="contact-form__title">
+              お問い合わせメールフォーム
+            </p>
+            <!-- /.contact-form__title -->
+            <dl class="contact-form__item">
+              <dt>
+                <label class="contact-form__heading">
+                  お問い合わせ種類
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <!-- ラジオボタンのリスト -->
+                <ul class="contact-form__radio radio__items">
+                  <li class="radio__item">
+                    <label for="radio-01" class="radio-label">
+                      <input id="radio-01" class="radio-input" type="radio" name="radio-name" required value="弊社製品について">
+                      <span class="radio-label-span">弊社製品について</span>
+                    </label>
+                  </li>
+                  <!-- /.radio__item -->
+                  <li class="radio__item">
+                    <label for="radio-02" class="radio-label">
+                      <input id="radio-02" class="radio-input" type="radio" name="radio-name" required value="いちご狩りについて">
+                      <span class="radio-label-span">いちご狩りについて</span>
+                    </label>
+                  </li>
+                  <!-- /.radio__item -->
+                  <li class="radio__item">
+                    <label for="radio-03" class="radio-label">
+                      <input id="radio-03" class="radio-input" type="radio" name="radio-name" required value="その他のお問い合わせ">
+                      <span class="radio-label-span">その他のお問い合わせ</span>
+                    </label>
+                  </li>
+                  <!-- /.radio__item -->
+                </ul>
+                <!-- /.contact-form__radio radio__items -->
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- 名前 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="name" class="contact-form__heading">
+                  お名前
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <input type="text" id="name" class="input-area" name="entry.563087799" placeholder="" autocomplete="name" required>
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- 郵便番号 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="postal-code" class="contact-form__heading">
+                  郵便番号
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <input type="text" id="postal-code" class="input-area input-area__postal-code" name="entry.1358083958" placeholder="">
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- 住所 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="address" class="contact-form__heading">
+                  ご住所
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <input type="text" id="address" class="input-area" name="entry.1187663989" placeholder="" required>
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- メールアドレス -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="Email" class="contact-form__heading">
+                  メールアドレス
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <input type="email" id="Email" class="input-area" name="entry.1754300124" placeholder="" autocomplete="email" required>
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- 電話番号 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="tel" class="contact-form__heading">
+                  電話番号
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <input type="text" id="tel" class="input-area" name="entry.1062761704" placeholder="" autocomplete="tel" required>
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- お問い合わせ内容 -->
+            <dl class="contact-form__item">
+              <dt>
+                <label for="message" class="contact-form__heading">
+                  お問い合わせ内容
+                  <span>必須</span>
+                </label>
+                <!-- /.contact-form__heading -->
+              </dt>
+              <dd>
+                <textarea id="message" class="text-area" name="entry.1319223634" cols="32" rows="7" placeholder="ここにお問い合わせ内容を書いてください。" required></textarea>
+                <span class="error_required"></span> 
+              </dd>
+            </dl>
+            <!-- /.contact-form__item -->
+            <!-- 送信ボタン -->
+            <div class="contact-form__btn-wrapper">
+              <input type="submit" id="js-submit" class="input-submit contact-form__btn-submit js-submit-btn" value="送信する" disabled>
+            </div>
+            <p id="error-message" class="error-message">*必須項目に入力がありません。</p>
+            <!-- /.contact-form__btn-wrapper -->
+          </form><!-- /.contact-form -->
+          <p class="end-message">お問い合わせありがとうございました</p>
+          <p class="false-message">送信失敗です</p>
+          <!-- フォームここまで -->
+        </div>
+        <!-- /.contact__form-wrapper -->
       </div>
       <!-- /.contact__inner inner -->
     </section>
     <!-- /.contact -->
   </main>
-
   <!-- フッター -->
   <footer class="footer">
     <div class="footer__inner inner">
@@ -865,9 +863,9 @@
       <!-- /.footer__copyright -->
     </div>
     <!-- /.footer__inner -->
-          <!-- フッター画像 -->
-          <div class="footer__image"></div>
-          <!-- /.footer__image -->
+    <!-- フッター画像 -->
+    <div class="footer__image"></div>
+    <!-- /.footer__image -->
   </footer>
   <!-- /.footer -->
   <script>

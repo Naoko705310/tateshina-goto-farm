@@ -3,11 +3,9 @@
 
 .contact {
   background-color: #FDF9EF;
-  // margin-top: rem(40);
   padding-top: rem(56);
   padding-bottom: rem(20);
   @include mq(md) {
-    // margin-top: rem(78);
     padding-top: rem(104);
     padding-bottom: rem(30);
   }
@@ -20,42 +18,24 @@
   }
 }
 
-.inner {
-
-}
-
-.contact__section-title {
-
-}
-
-.section-title {
-
-}
-
-.section-title__text {
-
-}
-
 .contact__copy {
   font-family: $base-font-family;
   color: #4E301B;
   font-size: rem(16);
   font-weight:$bold;
   text-align: center;
-  margin-top: rem(40);
-  padding: rem(35);
+  margin-top: rem(67);
+  padding: 0 rem(32);
   @include mq(md) {
     font-size: rem(18);
     margin-top: rem(67);
-    padding: 0 rem(74);
+    padding: 0;
   }
 }
 
-.contact__form {
-
+.contact__form-wrapper {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(93);
+  }
 }
-
-.contact-form {
-
-}
-

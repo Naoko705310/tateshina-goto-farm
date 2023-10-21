@@ -33,12 +33,11 @@
   position: absolute;
   top: 63.418%;//423/667
   left: 8.8%;//33/375
-  z-index: 1; //headerは2にするnavは3?
+  z-index: 1; 
   @include mq(md) {
-    // flex-direction: row-reverse;
-    writing-mode: vertical-rl; /* 縦書きに設定 */
-    text-orientation: mixed; /* 縦書きのテキスト向きを設定（必要に応じて） */
-    white-space: nowrap; /* テキストを折り返さないように設定（必要に応じて） */
+    writing-mode: vertical-rl; //縦書き
+    text-orientation: mixed; //縦書きの向き
+    white-space: nowrap; //テキストを折り返さない
     top: 13.114%;//112/854
     right: 11.406%;//146/1280
     gap: rem(21);
@@ -50,7 +49,6 @@
   font-size: clamp(24px, 24px + 24 * (100vw - 375px) / 905, 32px);
   color: $font-color;
   font-weight: $bold;
-  
   display: inline-block;
   background-color: #fff;
   padding: rem(7);
@@ -60,7 +58,6 @@
   letter-spacing: 0.5em;
     padding: rem(7) rem(15) 0;
     margin-top: 0;
-    // margin-right: rem(21);
   }
 }
 

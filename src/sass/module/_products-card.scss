@@ -1,4 +1,5 @@
 @use "global" as *;
+// 製品一覧カード
 
 .products-card {
   width: 100%;
@@ -36,13 +37,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  gap: rem(14);
   flex-grow: 1;
   padding: rem(16);
 }
 
 .products-card__heading {
   font-family: $base-font-family;
-  font-size: rem(14);
+  font-size: clamp(1rem, 2.5vw, 14px);
   color: $font-color;
   font-weight: $bold;
   display: block;
@@ -53,7 +55,7 @@
 
 .products-card__price {
   font-family: $base-font-family;
-  font-size: rem(14);
+  font-size: clamp(1rem, 2.5vw, 14px);
   color: $font-color;
   font-weight: $normal;
   display: block;

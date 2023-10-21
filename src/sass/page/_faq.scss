@@ -8,7 +8,6 @@
   @include mq(md) {
     margin-top: rem(91);
     padding-top: rem(91);
-    // padding: rem(91) 0;
     padding: rem(60) 0;
   }
 }
@@ -17,13 +16,16 @@
   text-transform: uppercase;
 }
 
-
-
-.faq__list {
+.faq__list-wrapper {
   margin-top: rem(32);
   @include mq(md) {
-    width: rem(740);
     margin-top: rem(73);
+  }
+}
+
+.faq__list {
+  @include mq(md) {
+    width: rem(740);
   }
 }
 

@@ -1,6 +1,5 @@
 @use "global" as *;
-// お問い合わせフォーム
-
+// お問い合わせフォーム（サンクスページ）
 
 .thanks-page {
   background-color: #FDF9EF;
@@ -22,6 +21,7 @@
     font-size: rem(24);
   }
 }
+
 .thanks-page__heading-sub {
   font-family: $base-font-family;
   font-size: rem(16);
@@ -42,13 +42,12 @@
   margin-top: rem(80);
   margin-right: auto;
   margin-left: auto;
-
   @include mq(md) {
-    
     padding: rem(80) 0;
     margin-top: rem(120);
   }
 }
+
 .thanks-page__text {
   font-family: $base-font-family;
   font-size: rem(14);
@@ -58,6 +57,7 @@
     font-size: rem(16);
   }
 }
+
 .thanks-page__text--completed {
   font-family: $base-font-family;
   font-size: rem(14);

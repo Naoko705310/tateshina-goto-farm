@@ -1,10 +1,6 @@
 @use "global" as *;
 // フッターナビ
 
-.footer-nav {
-
-}
-
 .footer-nav__items {
   display: flex;
   flex-direction: column;
@@ -18,7 +14,7 @@
 
 .footer-nav__link {
   font-family: $base-font-family;
-  font-size: rem(14);  
+  font-size: clamp(1rem, 2.5vw, 14px); 
   color: #4E301B;
   font-weight: $bold;
   display: inline-block;

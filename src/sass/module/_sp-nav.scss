@@ -10,17 +10,13 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  overflow: scroll; /* 縦スクロールを可能にする */
+  overflow: scroll; 
   padding-top: rem(61);
   padding-right: rem(20);
   padding-bottom: rem(198);
   padding-left: rem(20);
   display: none;
 }
-
-// .sp-nav__logo {
-
-// }
 
 .sp-nav-logo {
   width: rem(96);
@@ -38,33 +34,20 @@
   align-items: center;
 }
 
-// .sp-nav__title {
-
-// }
-
 .sp-nav-title {
   width: 100%;
   max-width: 100%;
-  // padding-top: rem(22.28);
-  // padding-right: rem(14);
-  // padding-bottom: rem(17.94);
-  // padding-left: rem(10.76);
   margin-top: rem(10);
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
 
-// .sp-nav-title__link {
-
-// }
-
 .sp-nav-title__logo-main {
   width: rem(280);
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .sp-nav-title__logo-sub {
@@ -72,14 +55,6 @@
   max-width: 100%;
   margin: rem(11.25) auto 0 auto;
 }
-
-// .sp-nav__nav {
-//   margin-top: rem(33);
-// }
-
-// .sp-nav {
-
-// }
 
 .sp-nav__items {
   display: flex;
