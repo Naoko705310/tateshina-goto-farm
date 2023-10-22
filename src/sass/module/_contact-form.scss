@@ -165,14 +165,14 @@ input[type="text"] {
 //ラジオボタンをチェックした後の丸
 .radio-input:checked + .radio-label-span::after {
   content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: #4E301B;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 6px solid #4E301B;
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 4px;  
+  left: 0;  
   transform: translateY(-50%);
 }
 

@@ -25,4 +25,5 @@
 
 .swiper-wrapper .swiper-slide {
   height: auto; //cardの高さを揃える(デフォルトの100%を打ち消し）
+  padding-bottom: rem(4);
 }
